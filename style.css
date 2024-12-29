@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d1a1dd;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b0b0b;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 8px; /* Added border-radius for rounded square */
+    overflow: hidden; /* To ensure children don't overflow the rounded corners */
+    background-color: #111010; /* Optional: To differentiate container background */
+    padding: 15px; /* Optional: To add some padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding shadow for better visual */
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px; /* Ensure individual product items also have rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 15px;
+    width: calc(25% - 30px); /* Adjusted for 4 items per row */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product .price {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product button:hover {
+    background: #555;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product {
+        width: calc(33.333% - 30px); /* Adjusted for 3 items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 30px); /* Adjusted for 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%; /* Adjusted for 1 item per row */
+        margin: 15px 0;
+    }
+}

@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed position to stick at the top */
+    top: 0; /* Positioned at the top of the viewport */
+    left: 0; /* Align left */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+
+header .logo img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form content */
+    width: 300px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center; /* Center align the label text */
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Take full width of the form */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Take full width of the form */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+form button:hover {
+    background-color: #218838;
+}

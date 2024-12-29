@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #ffffff; /* Adjusted for better contrast */
+    background-image: url('background.jpg');
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adds a slight text shadow */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-container h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+.header-container .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.header-container nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header-container nav a .icon {
+    height: 24px;
+    width: 24px;
+}
+
+main {
+    padding: 20px;
+    color: #333; /* Adjusted for better readability in the main section */
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 38px;
+    color: #ffffff; /* Ensures heading text stands out */
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+}
+
+.category a {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease; /* Specifies the transition for background */
+}
+
+.category a:hover {
+    background-color: #555; /* New background color on hover */
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category {
+        width: calc(50% - 30px); /* Adjusted for 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .category {
+        width: 100%; /* Adjusted for 1 item per row */
+        margin: 15px 0;
+    }
+}
